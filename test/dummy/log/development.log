@@ -1,0 +1,813 @@
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 18.1490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 17.7860ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3360ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-05 17:32:48 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/railties-4.1.5/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spongecms" for 127.0.0.1 at 2014-09-05 17:32:53 +0800
+
+ActionController::RoutingError (No route matches [GET] "/spongecms"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:32:58 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2580ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (37.6ms)
+Completed 200 OK in 89ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:32:58 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:32:58 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:32:58 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:32:58 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:33:46 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2680ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (2.2ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:33:46 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:33:46 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:33:46 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:33:46 +0800
+
+
+Started GET "/spongecms/pages/new" for 127.0.0.1 at 2014-09-05 17:34:59 +0800
+Processing by Spongecms::PagesController#new as HTML
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/_form.html.erb (23.9ms)
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/new.html.erb within layouts/spongecms/application (26.3ms)
+Completed 200 OK in 59ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:34:59 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:34:59 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:34:59 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:34:59 +0800
+
+
+Started GET "/spongecms/pages/new" for 127.0.0.1 at 2014-09-05 17:39:06 +0800
+Processing by Spongecms::PagesController#new as HTML
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/_form.html.erb (59.1ms)
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/new.html.erb within layouts/spongecms/application (63.2ms)
+Completed 200 OK in 98ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:39:07 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:39:07 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:39:07 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:39:07 +0800
+
+
+Started POST "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:39:44 +0800
+Processing by Spongecms::PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Create Page"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant PageSection):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.5) lib/active_support/core_ext/string/inflections.rb:66:in `constantize'
+  mongoid (4.0.0) lib/mongoid/relations/metadata.rb:575:in `klass'
+  mongoid (4.0.0) lib/mongoid/relations/embedded/many.rb:448:in `scope'
+  mongoid (4.0.0) lib/mongoid/relations/embedded/many.rb:240:in `block in initialize'
+  mongoid (4.0.0) lib/mongoid/relations/proxy.rb:42:in `init'
+  mongoid (4.0.0) lib/mongoid/relations/embedded/many.rb:234:in `initialize'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:44:in `new'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:44:in `create_relation'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:26:in `__build__'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:104:in `block (2 levels) in get_relation'
+  mongoid (4.0.0) lib/mongoid/threaded/lifecycle.rb:125:in `_loading'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:100:in `block in get_relation'
+  mongoid (4.0.0) lib/mongoid/threaded/lifecycle.rb:84:in `_building'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:99:in `get_relation'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:187:in `block in getter'
+  mongoid (4.0.0) lib/mongoid/validatable.rb:73:in `block in read_attribute_for_validation'
+  mongoid (4.0.0) lib/mongoid/relations/accessors.rb:140:in `without_autobuild'
+  mongoid (4.0.0) lib/mongoid/validatable.rb:73:in `read_attribute_for_validation'
+  activemodel (4.1.5) lib/active_model/validator.rb:165:in `block in validate'
+  activemodel (4.1.5) lib/active_model/validator.rb:164:in `each'
+  activemodel (4.1.5) lib/active_model/validator.rb:164:in `validate'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:447:in `public_send'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:447:in `block in make_lambda'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:184:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:184:in `block in simple'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  mongoid (4.0.0) lib/mongoid/interceptable.rb:138:in `run_callbacks'
+  activemodel (4.1.5) lib/active_model/validations.rb:376:in `run_validations!'
+  activemodel (4.1.5) lib/active_model/validations/callbacks.rb:111:in `block in run_validations!'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  mongoid (4.0.0) lib/mongoid/interceptable.rb:138:in `run_callbacks'
+  activemodel (4.1.5) lib/active_model/validations/callbacks.rb:111:in `run_validations!'
+  activemodel (4.1.5) lib/active_model/validations.rb:317:in `valid?'
+  mongoid (4.0.0) lib/mongoid/validatable.rb:97:in `valid?'
+  activemodel (4.1.5) lib/active_model/validations.rb:352:in `invalid?'
+  mongoid (4.0.0) lib/mongoid/persistable/creatable.rb:114:in `prepare_insert'
+  mongoid (4.0.0) lib/mongoid/persistable/creatable.rb:23:in `insert'
+  mongoid (4.0.0) lib/mongoid/persistable/savable.rb:23:in `save'
+  /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/controllers/spongecms/pages_controller.rb:29:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started POST "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:40:14 +0800
+Processing by Spongecms::PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Create Page"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7830ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_development collection=spongecms_pages documents=[{"_id"=>BSON::ObjectId('540984fe5a495273cd000000'), "title"=>"关于我们", "category_id"=>nil, "layout"=>"", "theme"=>"", "updated_at"=>2014-09-05 09:40:14 UTC, "created_at"=>2014-09-05 09:40:14 UTC}] flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 270.9030ms
+Redirected to 
+Completed 500 Internal Server Error in 340ms
+
+NameError (undefined local variable or method `_slugs' for #<Spongecms::Page:0x007f840a8d80e8>):
+  mongoid_slug (3.2.1) lib/mongoid/slug.rb:193:in `slug'
+  mongoid_slug (3.2.1) lib/mongoid/slug.rb:188:in `to_param'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:500:in `block in <class:Generator>'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:61:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:61:in `block in extract_parameterized_parts'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:60:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:60:in `extract_parameterized_parts'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:20:in `block in generate'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:75:in `match_route'
+  actionpack (4.1.5) lib/action_dispatch/journey/formatter.rb:19:in `generate'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:599:in `generate'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:629:in `generate'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:665:in `url_for'
+  actionpack (4.1.5) lib/action_dispatch/routing/url_for.rb:155:in `url_for'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:230:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:181:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:270:in `block (2 levels) in define_url_helper'
+  actionpack (4.1.5) lib/action_dispatch/routing/polymorphic_routes.rb:142:in `polymorphic_url'
+  actionpack (4.1.5) lib/action_dispatch/routing/url_for.rb:161:in `url_for'
+  actionpack (4.1.5) lib/action_controller/metal/redirecting.rb:90:in `_compute_redirect_to_location'
+  actionpack (4.1.5) lib/action_controller/metal/redirecting.rb:70:in `redirect_to'
+  actionpack (4.1.5) lib/action_controller/metal/flash.rb:57:in `redirect_to'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:61:in `block in redirect_to'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:60:in `redirect_to'
+  /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/controllers/spongecms/pages_controller.rb:30:in `create'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started POST "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+Processing by Spongecms::PagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Create Page"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$all"=>[/^guan\-yu\-wo\-men(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('540985225a49527428000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 7.9180ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_development collection=spongecms_pages documents=[{"_id"=>BSON::ObjectId('540985225a49527428000000'), "_slugs"=>["guan-yu-wo-men"], "title"=>"关于我们", "category_id"=>nil, "layout"=>"", "theme"=>"", "updated_at"=>2014-09-05 09:40:50 UTC, "created_at"=>2014-09-05 09:40:50 UTC}] flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 0.5140ms
+Redirected to http://0.0.0.0:3001/spongecms/pages/guan-yu-wo-men
+Completed 302 Found in 99ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spongecms/pages/guan-yu-wo-men" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+Processing by Spongecms::PagesController#show as HTML
+  Parameters: {"id"=>"guan-yu-wo-men"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["guan-yu-wo-men"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 0.8310ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/show.html.erb within layouts/spongecms/application (4.0ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:40:50 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:40:53 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3940ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (5.5ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:40:53 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:40:53 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:40:53 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:40:53 +0800
+
+
+Started GET "/spongecms/pages/540984fe5a495273cd000000" for 127.0.0.1 at 2014-09-05 17:41:04 +0800
+Processing by Spongecms::PagesController#show as HTML
+  Parameters: {"id"=>"540984fe5a495273cd000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3500ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/show.html.erb within layouts/spongecms/application (0.9ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:05 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:05 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:05 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:05 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:41:08 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0400ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (3.4ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:08 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:08 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:08 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:08 +0800
+
+
+Started GET "/spongecms/pages/540984fe5a495273cd000000" for 127.0.0.1 at 2014-09-05 17:41:12 +0800
+Processing by Spongecms::PagesController#show as HTML
+  Parameters: {"id"=>"540984fe5a495273cd000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3690ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/show.html.erb within layouts/spongecms/application (1.1ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:12 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:12 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:12 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:12 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:41:15 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4010ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (3.6ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:15 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:15 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:15 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:15 +0800
+
+
+Started GET "/spongecms/pages/540984fe5a495273cd000000/edit" for 127.0.0.1 at 2014-09-05 17:41:21 +0800
+Processing by Spongecms::PagesController#edit as HTML
+  Parameters: {"id"=>"540984fe5a495273cd000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4470ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/_form.html.erb (22.2ms)
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/edit.html.erb within layouts/spongecms/application (26.9ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:21 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:21 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:21 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:21 +0800
+
+
+Started PATCH "/spongecms/pages/540984fe5a495273cd000000" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+Processing by Spongecms::PagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Update Page", "id"=>"540984fe5a495273cd000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$all"=>[/^guan\-yu\-wo\-men(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('540984fe5a495273cd000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 6.3750ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} update={"$set"=>{"_slugs"=>["guan-yu-wo-men-1"], "updated_at"=>2014-09-05 09:41:22 UTC}} flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 3.0930ms
+Redirected to http://0.0.0.0:3001/spongecms/pages/guan-yu-wo-men-1
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spongecms/pages/guan-yu-wo-men-1" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+Processing by Spongecms::PagesController#show as HTML
+  Parameters: {"id"=>"guan-yu-wo-men-1"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["guan-yu-wo-men-1"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 0.6990ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/show.html.erb within layouts/spongecms/application (0.9ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:22 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:41:23 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5100ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (2.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:23 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:23 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:41:23 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:41:23 +0800
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 8.1930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$all"=>[/^about(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('540984fe5a495273cd000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_development collection=spongecms_pages selector={"_id"=>BSON::ObjectId('540984fe5a495273cd000000')} update={"$set"=>{"_slugs"=>["about"], "updated_at"=>2014-09-05 09:52:57 UTC}} flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 0.4910ms
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6370ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (40.4ms)
+Completed 200 OK in 116ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/categories.css?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/assets/spongecms/categories.js?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:53:12 +0800
+
+
+Started GET "/spongecms/pages/about/edit" for 127.0.0.1 at 2014-09-05 17:53:28 +0800
+Processing by Spongecms::PagesController#edit as HTML
+  Parameters: {"id"=>"about"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["about"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 1.2450ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/_form.html.erb (31.2ms)
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/edit.html.erb within layouts/spongecms/application (34.4ms)
+Completed 200 OK in 57ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:53:29 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:53:29 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:53:29 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:53:29 +0800
+
+
+Started PATCH "/spongecms/pages/about" for 127.0.0.1 at 2014-09-05 17:53:30 +0800
+Processing by Spongecms::PagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Update Page", "id"=>"about"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["about"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 0.9300ms
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant Category):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.5) lib/active_support/core_ext/string/inflections.rb:66:in `constantize'
+  mongoid (4.0.0) lib/mongoid/relations/metadata.rb:575:in `klass'
+  mongoid (4.0.0) lib/mongoid/fields/foreign_key.rb:112:in `object_id_field?'
+  mongoid (4.0.0) lib/mongoid/fields/foreign_key.rb:95:in `mongoize'
+  mongoid (4.0.0) lib/mongoid/attributes.rb:289:in `typed_value_for'
+  mongoid (4.0.0) lib/mongoid/attributes.rb:172:in `block in write_attribute'
+  mongoid (4.0.0) lib/mongoid/threaded/lifecycle.rb:26:in `_assigning'
+  mongoid (4.0.0) lib/mongoid/attributes.rb:168:in `write_attribute'
+  mongoid (4.0.0) lib/mongoid/fields.rb:457:in `block (2 levels) in create_field_setter'
+  mongoid (4.0.0) lib/mongoid/attributes/processing.rb:97:in `process_attribute'
+  mongoid (4.0.0) lib/mongoid/attributes/processing.rb:25:in `block in process_attributes'
+  mongoid (4.0.0) lib/mongoid/attributes/processing.rb:23:in `each_pair'
+  mongoid (4.0.0) lib/mongoid/attributes/processing.rb:23:in `process_attributes'
+  mongoid (4.0.0) lib/mongoid/attributes.rb:203:in `block in assign_attributes'
+  mongoid (4.0.0) lib/mongoid/threaded/lifecycle.rb:26:in `_assigning'
+  mongoid (4.0.0) lib/mongoid/attributes.rb:202:in `assign_attributes'
+  mongoid (4.0.0) lib/mongoid/persistable/updatable.rb:51:in `update'
+  /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/controllers/spongecms/pages_controller.rb:38:in `update'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.1.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/var/rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/var/rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started PATCH "/spongecms/pages/about" for 127.0.0.1 at 2014-09-05 17:54:33 +0800
+Processing by Spongecms::PagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Lf7HyjspoKLUW1dhjN/rrIVM12C3UlqKku4WaJH368=", "page"=>{"title"=>"关于我们", "category_id"=>"", "layout"=>"", "theme"=>""}, "commit"=>"Update Page", "id"=>"about"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["about"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 0.5300ms
+Redirected to http://0.0.0.0:3001/spongecms/pages/about
+Completed 302 Found in 71ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/spongecms/pages/about" for 127.0.0.1 at 2014-09-05 17:54:33 +0800
+Processing by Spongecms::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={"_slugs"=>{"$in"=>["about"]}} flags=[] limit=1 skip=0 batch_size=nil fields=nil runtime: 0.6910ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/show.html.erb within layouts/spongecms/application (2.1ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/categories.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/assets/spongecms/categories.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:34 +0800
+
+
+Started GET "/spongecms/pages" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+Processing by Spongecms::PagesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=spongecms_pages selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3690ms
+  Rendered /Users/Alex/Documents/zires/undefine_coffee/spongecms/app/views/spongecms/pages/index.html.erb within layouts/spongecms/application (4.1ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/spongecms/categories.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+
+
+Started GET "/assets/spongecms/pages.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+
+
+Started GET "/assets/spongecms/application.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+
+
+Started GET "/assets/spongecms/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+
+
+Started GET "/assets/spongecms/categories.js?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
+
+
+Started GET "/assets/spongecms/pages.css?body=1" for 127.0.0.1 at 2014-09-05 17:54:36 +0800
